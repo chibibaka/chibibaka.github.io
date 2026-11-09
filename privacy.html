@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the locally run CFI Presentations application.">
+  <meta name="theme-color" content="#111827">
+  <title>Privacy Policy — CFI Presentations</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1220; --panel:#121d2e; --line:#26364c; --text:#edf3fb; --muted:#a9b8cb; --accent:#b9c8ff; }
+    * { box-sizing:border-box }
+    body { margin:0; font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:linear-gradient(145deg,#0b1220,#101a2b); color:var(--text); }
+    main { width:min(850px,calc(100% - 36px)); margin:0 auto; padding:54px 0 48px; }
+    a { color:var(--accent); }
+    h1 { font-size:clamp(2rem,6vw,3.2rem); line-height:1.1; letter-spacing:-.035em; }
+    h2 { margin-top:2rem; font-size:1.25rem; }
+    p,li { color:#c2cede; }
+    .updated { color:var(--muted); font-size:.9rem; }
+    .notice { padding:16px 18px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="./index.html">← CFI Presentations</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: November 9, 2026</p>
+
+  <p>This policy describes how the CFI Presentations desktop application handles information when it is run on a user's computer.</p>
+
+  <h2>1. How the application works</h2>
+  <p>CFI Presentations is designed to run locally on the user's computer. Lesson inputs, uploaded reference documents, generated lesson files, project data, and application settings are stored locally by default in the application data folder. The application does not operate a central CFI Presentations account service or its own cloud database.</p>
+
+  <h2>2. OpenAI API</h2>
+  <p>When the user requests AI-assisted lesson analysis or generation, the relevant prompts, lesson inputs, and selected reference excerpts are sent to the OpenAI API using the API key configured by the user. OpenAI processes that information under its applicable API terms and privacy documentation. API usage may be billed separately by OpenAI. The application developer does not receive a copy of the user's API key through this website.</p>
+
+  <h2>3. Google account and Google Slides</h2>
+  <p>If the user chooses to connect Google Slides, the application uses Google's OAuth authorization flow. It requests these permissions:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/presentations</code> to create and edit Google Slides presentations.</li>
+    <li><code>https://www.googleapis.com/auth/drive.file</code> to create and manage files created or opened by this application within Google Drive.</li>
+  </ul>
+  <p>The application stores the OAuth client configuration and authorization token locally on the user's computer. The token is used to authenticate requests to Google's APIs. The application does not send the token to the website hosting this policy. The user can disconnect Google from within the application; the locally stored token is then removed. The user can also revoke the application's access through their Google Account security settings.</p>
+  <p>When the user publishes a lesson, the generated presentation content is sent to Google through the Slides and Drive APIs and saved in the user's Google Drive. Google's handling of that information is governed by Google's own terms and privacy policy.</p>
+
+  <h2>4. Information this website collects</h2>
+  <p>This static GitHub Pages website is provided to display information about the application and this privacy policy. It does not contain an application login, analytics code, advertising trackers, contact form, or file-upload feature. GitHub may process standard technical request data as part of hosting the website; GitHub's privacy documentation applies to that hosting service.</p>
+
+  <h2>5. Sharing and sale</h2>
+  <p>The application developer does not operate a service that sells personal information or independently shares users' lesson data. Information is transmitted to OpenAI or Google only when the user invokes the corresponding application feature, as described above. Those providers process information under their own applicable terms and policies.</p>
+
+  <h2>6. Data retention and deletion</h2>
+  <p>Local project files, reference documents, settings, and OAuth tokens remain on the user's computer until the user deletes them or uses the application's available deletion or disconnect functions. Presentations created in Google Drive remain subject to the user's Google Drive settings and deletion actions. OpenAI API data handling and retention are governed by OpenAI's applicable API policies and account settings.</p>
+
+  <h2>7. Security</h2>
+  <p>Users are responsible for protecting their computer, local application folder, OpenAI API key, Google OAuth client JSON file, and locally stored Google authorization token. These credentials should not be shared or committed to a public source-code repository.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>This policy may be updated when the application's features or data handling change. The revision date at the top of this page indicates the latest update.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about this personal project, use the contact options available through the project owner's GitHub profile: <a href="https://github.com/chibibaka">github.com/chibibaka</a>.</p>
+
+  <div class="notice">
+    <strong>Important:</strong> This policy is written for the current local CFI Presentation Generator v20 workflow described above. It should be reviewed and updated if the application later adds cloud storage, telemetry, user accounts, remote processing, or other data flows.
+  </div>
+
+  <footer>© 2026 CFI Presentations · <a href="./index.html">Home</a></footer>
+</main>
+</body>
+</html>
