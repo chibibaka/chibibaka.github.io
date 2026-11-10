@@ -34,6 +34,8 @@
   <h2>2. OpenAI API</h2>
   <p>When the user requests AI-assisted lesson analysis or generation, the relevant prompts, lesson inputs, and selected reference excerpts are sent to the OpenAI API using the API key configured by the user. OpenAI processes that information under its applicable API terms and privacy documentation. API usage may be billed separately by OpenAI. The application developer does not receive a copy of the user's API key through this website.</p>
 
+  <p>When the user explicitly requests an AI-generated slide illustration, the slide title, teaching purpose, visual direction, slide facts, optional prompt text, and the bundled transparent PNG style-reference examples are sent to the OpenAI Images API. This request may incur a separate OpenAI API charge. Image generation is not performed automatically. Generated images are saved locally in the application's media folder until the user chooses to include them in a Google Slides presentation.</p>
+
   <h2>3. Google account and Google Slides</h2>
   <p>If the user chooses to connect Google Slides, the application uses Google's OAuth authorization flow. It requests these permissions:</p>
   <ul>
@@ -43,6 +45,8 @@
   <p>The application stores the OAuth client configuration and authorization token locally on the user's computer. The token is used to authenticate requests to Google's APIs. The application does not send the token to the website hosting this policy. The user can disconnect Google from within the application; the locally stored token is then removed. The user can also revoke the application's access through their Google Account security settings.</p>
   <p>When the user publishes a lesson, the generated presentation content is sent to Google through the Slides and Drive APIs and saved in the user's Google Drive. Google's handling of that information is governed by Google's own terms and privacy policy.</p>
 
+  <p>Images selected for a published presentation are included in the PowerPoint file sent to Google Drive for conversion into Google Slides. Videos selected for a slide are uploaded to the user's Google Drive and inserted into the presentation as Google Slides video elements. The application only sends media to Google when the user chooses to publish a presentation.</p>
+
   <h2>4. Information this website collects</h2>
   <p>This static GitHub Pages website is provided to display information about the application and this privacy policy. It does not contain an application login, analytics code, advertising trackers, contact form, or file-upload feature. GitHub may process standard technical request data as part of hosting the website; GitHub's privacy documentation applies to that hosting service.</p>
 
@@ -50,7 +54,7 @@
   <p>The application developer does not operate a service that sells personal information or independently shares users' lesson data. Information is transmitted to OpenAI or Google only when the user invokes the corresponding application feature, as described above. Those providers process information under their own applicable terms and policies.</p>
 
   <h2>6. Data retention and deletion</h2>
-  <p>Local project files, reference documents, settings, and OAuth tokens remain on the user's computer until the user deletes them or uses the application's available deletion or disconnect functions. Presentations created in Google Drive remain subject to the user's Google Drive settings and deletion actions. OpenAI API data handling and retention are governed by OpenAI's applicable API policies and account settings.</p>
+  <p>Local project files, reference documents, uploaded media, generated illustrations, settings, and OAuth tokens remain on the user's computer until the user deletes them or uses the application's available deletion or disconnect functions. Presentations created in Google Drive remain subject to the user's Google Drive settings and deletion actions. OpenAI API data handling and retention are governed by OpenAI's applicable API policies and account settings.</p>
 
   <h2>7. Security</h2>
   <p>Users are responsible for protecting their computer, local application folder, OpenAI API key, Google OAuth client JSON file, and locally stored Google authorization token. These credentials should not be shared or committed to a public source-code repository.</p>
